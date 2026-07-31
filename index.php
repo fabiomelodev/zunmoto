@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moto Reserva — Encontre vagas de entrega ou motoboys em minutos</title>
+<title>GiroMoto — Encontre vagas de entrega ou motoboys em minutos</title>
 <meta name="description" content="A plataforma que conecta motoboys e entregadores a comércios e restaurantes que precisam de reforço. Publique vagas ou candidate-se em minutos, sem burocracia.">
 
 <link rel="preconnect" href="https://fonts.bunny.net">
@@ -43,8 +43,8 @@
 
 <body class="font-sans text-ink-800 bg-white antialiased">
 
-<!-- CTA target: aponta para a instância do sistema Moto Reserva -->
-<?php $appUrl = 'http://motoreserva.test'; ?>
+<!-- CTA target: aponta para a instância do sistema GiroMoto -->
+<?php $appUrl = 'http://appgiromoto.test'; ?>
 
 <div x-data="{ mobileOpen: false, audience: 'motoboy' }">
 
@@ -55,7 +55,7 @@
         <span class="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center shadow-sm shadow-brand-500/30">
           <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 text-white"><path d="M5 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm14 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/><path d="M8 17h3m5 0h-2M5 11l2-5h4l1 3m3 2 2.4-1.6a1 1 0 0 0 .2-1.5L16 5h-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
-        <span class="font-display font-800 text-lg tracking-tight text-ink-900">Moto<span class="text-brand-600">Reserva</span></span>
+        <span class="font-display font-800 text-lg tracking-tight text-ink-900">Giro<span class="text-brand-600">Moto</span></span>
       </a>
 
       <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-ink-600">
@@ -113,7 +113,7 @@
         </h1>
 
         <p class="mt-6 text-lg text-ink-300 max-w-xl leading-relaxed">
-          O Moto Reserva une motoboys e entregadores a restaurantes e comércios em um só lugar: vagas por turno, chat em tempo real, mapa com distância e pagamento combinado direto entre as partes — sem taxa de intermediação.
+          O GiroMoto une motoboys e entregadores a restaurantes e comércios em um só lugar: vagas por turno, chat em tempo real, mapa com distância e pagamento combinado direto entre as partes — sem taxa de intermediação.
         </p>
 
         <div class="mt-9 flex flex-col sm:flex-row gap-3">
@@ -333,10 +333,11 @@
 
   <!-- CHAMADA PARA O SISTEMA -->
   <section class="pt-20 pb-16 sm:pt-24 sm:pb-20 bg-white">
-    <div class="max-w-5xl mx-auto px-5 sm:px-8">
-      <div class="relative overflow-visible rounded-3xl bg-gradient-to-br from-brand-500 to-brand-700 shadow-xl shadow-brand-500/20 px-6 pt-40 pb-10 text-center sm:pt-44 md:pl-64 md:pr-12 md:py-12 md:pt-12 md:text-left lg:pl-72">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="relative overflow-visible rounded-3xl bg-gradient-to-br from-brand-500 to-brand-700 shadow-xl shadow-brand-500/20 px-6 pt-44 pb-10 text-center sm:pt-52 md:pl-72 md:pr-12 md:py-12 md:pt-12 md:text-left lg:pl-[21rem]">
         <img src="assets/cta-courier-cutout.png" alt="Motoboy sorridente, de braços cruzados, ao lado da moto"
-             class="pointer-events-none absolute left-1/2 -top-16 h-48 w-auto -translate-x-1/2 object-contain drop-shadow-2xl sm:-top-20 sm:h-56 md:left-4 md:top-auto md:bottom-0 md:h-[22rem] md:-translate-x-0 lg:left-6 lg:h-[26rem]">
+             style="-webkit-mask-image:linear-gradient(to right, transparent 0%, black 12%); mask-image:linear-gradient(to right, transparent 0%, black 12%);"
+             class="pointer-events-none absolute left-1/2 -top-20 h-56 w-auto -translate-x-1/2 object-contain drop-shadow-2xl sm:-top-24 sm:h-64 md:left-2 md:top-auto md:bottom-0 md:h-[26rem] md:-translate-x-0 lg:left-4 lg:h-[30rem]">
 
         <h2 class="font-display font-800 text-2xl sm:text-3xl text-white mb-4">
           Sua próxima vaga — ou seu próximo motoboy — está a um clique
@@ -407,6 +408,23 @@
           Publicar minha primeira vaga
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÍDEO DEMONSTRATIVO -->
+  <section class="py-24 bg-brand-50">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-brand-600 font-semibold text-sm uppercase tracking-wide">Veja na prática</span>
+        <h2 class="font-display font-800 text-3xl sm:text-4xl text-ink-900 mt-3">Publicar uma vaga leva menos de 1 minuto</h2>
+        <p class="text-ink-500 mt-4">Acompanhe um dono de restaurante criando uma vaga para motoboy direto pelo GiroMoto.</p>
+      </div>
+
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-ink-900/10 border border-ink-100 bg-ink-950">
+        <video src="assets/video.mp4" autoplay loop muted playsinline controls class="block h-auto w-full">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
       </div>
     </div>
   </section>
@@ -487,7 +505,7 @@
 
       <div class="space-y-3" x-data="{ open: 0 }">
         <template x-for="(item, index) in [
-          { q: 'Usar o Moto Reserva tem algum custo?', a: 'O cadastro é gratuito tanto para motoboys quanto para empresas. Não cobramos mensalidade nem taxa sobre o valor combinado entre as partes.' },
+          { q: 'Usar o GiroMoto tem algum custo?', a: 'O cadastro é gratuito tanto para motoboys quanto para empresas. Não cobramos mensalidade nem taxa sobre o valor combinado entre as partes.' },
           { q: 'Como funciona o pagamento pela entrega?', a: 'O valor por entrega é combinado diretamente entre a empresa e o motoboy, exibido de forma clara na vaga antes da candidatura.' },
           { q: 'Preciso ter moto para me cadastrar?', a: 'Não. Você pode se cadastrar com moto, bike elétrica ou bike convencional, e ver apenas as vagas compatíveis com seu veículo.' },
           { q: 'Como sei que a vaga é confiável?', a: 'Empresas e motoboys constroem reputação por avaliações mútuas após cada entrega, visíveis no perfil de cada um.' },
@@ -510,7 +528,7 @@
     <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[36rem] h-[36rem] bg-brand-600/25 rounded-full blur-3xl"></div>
     <div class="relative max-w-3xl mx-auto px-5 sm:px-8 text-center">
       <h2 class="font-display font-800 text-3xl sm:text-4xl text-white mb-5">Pronto para começar?</h2>
-      <p class="text-ink-300 text-lg mb-10">Junte-se a motoboys e comércios que já usam o Moto Reserva para preencher vagas de entrega sem burocracia.</p>
+      <p class="text-ink-300 text-lg mb-10">Junte-se a motoboys e comércios que já usam o GiroMoto para preencher vagas de entrega sem burocracia.</p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
         <a href="<?= $appUrl ?>/login" class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-400 text-white font-semibold rounded-full px-8 py-3.5 shadow-lg shadow-brand-500/25 transition">
           Criar minha conta grátis
@@ -531,7 +549,7 @@
             <span class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center">
               <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4 text-white"><path d="M5 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm14 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/><path d="M8 17h3m5 0h-2M5 11l2-5h4l1 3m3 2 2.4-1.6a1 1 0 0 0 .2-1.5L16 5h-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
-            <span class="font-display font-800 text-white">Moto<span class="text-brand-500">Reserva</span></span>
+            <span class="font-display font-800 text-white">Giro<span class="text-brand-500">Moto</span></span>
           </a>
           <p class="text-ink-400 text-sm leading-relaxed">Conectando motoboys, entregadores e comércios em vagas de entrega por turno.</p>
         </div>
@@ -556,13 +574,13 @@
         <div>
           <h4 class="text-white font-semibold text-sm mb-4">Contato</h4>
           <ul class="space-y-2.5 text-sm text-ink-400">
-            <li>contato@motoreserva.com.br</li>
+            <li>contato@giromoto.com.br</li>
           </ul>
         </div>
       </div>
 
       <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink-500">
-        <p>&copy; <?= date('Y') ?> Moto Reserva. Todos os direitos reservados.</p>
+        <p>&copy; <?= date('Y') ?> GiroMoto. Todos os direitos reservados.</p>
         <p>Feito para quem entrega e para quem precisa entregar.</p>
       </div>
     </div>

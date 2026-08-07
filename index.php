@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZunMoto — Encontre vagas de entrega ou motoboys em minutos</title>
 <meta name="description" content="A plataforma que conecta motoboys e entregadores a comércios e restaurantes que precisam de reforço. Publique vagas ou candidate-se em minutos, sem burocracia.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800|sora:600,700,800" rel="stylesheet">
